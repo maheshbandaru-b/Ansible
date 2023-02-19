@@ -3,12 +3,12 @@
    hosts: all
    gather_facts: false
    tasks:
-    -name: Finding OS name
+    - name: Finding OS name
       shell: "uname"
-     register: os_name
-    -name: Finding uptime
+      register: os_name
+    - name: Finding uptime
       shell: "uptime"
-     register: uptime
-    -name: Displaying discovery name
-     debug:
+      register: uptime
+    - name: Displaying discovery name
+      debug:
       msg: "{{inventory_hostname}} {{os_name.stdout}} {{up_time.stdout}}"
