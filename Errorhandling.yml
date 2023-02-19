@@ -8,7 +8,7 @@
          "uname"
      register: os_name
     -name: Finding uptime
-     shell: "uptime"
+      shell: "uptime"
      register: uptime
     -name: Displaying discovery name
      debug:
