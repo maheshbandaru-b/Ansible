@@ -4,8 +4,7 @@
    gather_facts: false
    tasks:
     -name: Finding OS name
-      shell:
-         "uname"
+      shell: "uname"
      register: os_name
     -name: Finding uptime
       shell: "uptime"
