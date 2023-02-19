@@ -11,4 +11,4 @@
      register: uptime
     -name: Displaying discovery name
      debug:
-      msg:"{{inventory_hostname}} {{os_name.stdout}} {{up_time.stdout}}"
+      msg: "{{inventory_hostname}} {{os_name.stdout}} {{up_time.stdout}}"
